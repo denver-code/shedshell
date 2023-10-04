@@ -19,4 +19,4 @@ cargo build --release
 
 ## Demo
 ![Demo of shell](demo.png)
-Only `help`, `exit`, `ping` commands implemented directly to the code, the `args` and `dev` app were installed(manually) in a `bin` folder without any references in the code.
+Only `help`, `exit`, `ping` commands implemented directly to the code, the other apps were installed(manually or using ShedPackageManager) in a `bin` folder without any references in the code.
