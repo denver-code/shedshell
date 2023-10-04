@@ -23,7 +23,7 @@ pub fn spawn() -> Result<(), ExitCode> {
             "" => Ok(()),
             _ => {
                 // need to scan /bin folder for command and if exist - execute
-                let command_path = std::path::Path::new("bin").join(command[0]);
+                let command_path = std::path::Path::new("bin").join(format!("{}.shed", command[0]));
                 if command_path.exists() {
                     match execute_command(command_path.to_str().unwrap(), &command[1..]) {
                         Ok(output) => println!("{}", output),
